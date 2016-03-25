@@ -1,0 +1,65 @@
+.player_musicMini { overflow: hidden; position: fixed; bottom: 0; height: 50px; background: rgba(0,0,0,0.5); width:100%; left: 0; right: 0; padding-top: 2px}
+.player_musicSwitch { width: 50px; height: 50px; text-align: center; vertical-align: middle; float:left;}
+.player_musicSmallIcon { width: 50px; height: 50px; }
+.player_musicInfo {position: absolute; top:0; left:60px; right:100px; height:50px; color:#fff; white-space: nowrap; text-overflow:ellipsis; overflow: hidden; }
+.palyer_musicName { font-size: 18px; height: 25px;  line-height: 30px;}
+.palyer_musicAuthor { font-size: 14px; height: 25px;  line-height: 25px;}
+
+
+.player_progress_box,.player_progress {position: absolute; top:0px; left:0;  width: 0%; background: #f15b2c; height:2px;}
+.player_progress_box { width: 100%; background: black;}
+
+.player_vote { position: absolute; width: 35px; height: 35px; right: 53px; -webkit-border-radius: 20px; border-radius: 20px; background: rgba(00,00,00,0.4); fill:white; top:50%; margin-top: -16px;}
+.player_voted { fill:#f5bc19;}
+.player_minContro { position: absolute; width: 35px; height: 35px; right: 5px; -webkit-border-radius: 20px; border-radius: 20px; background: rgba(00,00,00,0.4); fill:white; top:50%; margin-top: -16px; -webkit-transition: all 0.5s;}
+
+/**/
+.player_musicBig {  overflow: hidden; position: fixed; top:0; left: 0; bottom: 0; right: 0; background: url('img/bg001.jpg') center center; background-size: cover;}
+.playerB_top { height: 40px; border-bottom: 1px solid rgba(255,255,255,0.2); position: relative;}
+.playerB_back { position: absolute; left: 0; height: 40px; width: 30px; background: url('img/icons.png') no-repeat; background-size:250px 250px; text-indent: -200px; overflow: hidden;}
+.player_musicBig .palyer_musicName{ width: 100%; text-align: center; height: 40px; line-height: 40px; color: white; font-size: 16px;}
+.playerB_backicons { position: absolute; top: 0;height: 40px; line-height: 40px; right: 0;}
+.player_musicType { position: absolute; right: 4px; top: 7px; background: #f0b72b; padding:5px; border-radius: 2px; color:white; font-size: 14px; font-weight: normal; display: none;}
+.playerB_backicons span { display: inline-block;  height: 20px; width: 20px;  background-image: url('img/icons.png'); background-size:250px 250px; vertical-align: middle; float: left; margin-top: 10px; margin-right: 5px;}
+.playerB_backicons_a { background-position:  -37px -11px;}
+.playerB_backicons_b { background-position:  -61px -11px;}
+.playerB_backicons_c { background-position:  -86px -11px;}
+
+.playerB_bottom { height: 45px; position: absolute;bottom: 0;  left: 10px; right: 10px; overflow: hidden; }
+.playerB_bottom_box { position:relative; float: left; width: 33%; height: 25px; line-height: 25px; margin-top: 10px; color: #fff;  border-right: 1px solid rgba(255,255,255,0.6); }
+.playerB_bottom_box span { font-size: 14px; vertical-align: middle; height: 23px; line-height: 23px; display: inline-block;}
+.playerB_bottom_boxLove { text-align: center;}
+
+.playerB_bottom_box:last-child { border:none; }
+.playerB_icon_name { position: absolute; left:3px; width: 20px; height: 20px;background-image: url('img/icons.png');background-position:  -185px -14px; background-size:250px 250px; display: inline-block; }
+.playerB_icon_school { position: absolute; left:3px; width: 20px; height: 20px;background-image: url('img/icons.png');background-position:  -217px -14px; background-size:250px 250px; display: inline-block;}
+.playerB_icon_love { width:20px; height:20px; vertical-align: middle; fill:#f15b2c;}
+.player_musicBig .player_progress_box { top: auto; bottom: 45px; background: rgba(255,255,255,0.3)}
+.player_musicBig .player_progress { width: 0%; background:#fa8910; }
+.playerB_bottom_boxText { position: absolute; left:23px; right: 3px; white-space: normal; overflow: hidden; }
+.palyer_musicLove { position: relative; left: 0; right: 0;}
+.playerB_player { position: absolute;top:40px; bottom: 33%; left: 0; right: 0; text-align: center;}
+.playerB_player svg { position: relative; -webkit-animation: run 10s linear infinite paused; }
+.playerB_player_run svg { -webkit-animation: run 10s linear infinite; }
+/**/
+
+.player_progress_handle { background:url('img/icons.png') -150px -9px; height: 30px; top: -21px; width: 25px; position: absolute; left:0px; margin-left: -5px; z-index: 10000;  background-size:250px 250px; }
+
+.playerB_player_time { color:#fff; position: absolute; bottom: 40px; width: 100%; text-align: center;}
+.playerB_player_timeGrey { color:#999;}
+
+@-webkit-keyframes run {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+.playerB_control { position: absolute; top: 67%;bottom: 50px; text-align: center; width: 100%;}
+.playerB_control a { position: relative; display: inline-block; width: 20%; float: left; height: 100%; text-align: center;  vertical-align: middle;}
+.playerB_control_svg { width:100%; height: 100%; vertical-align: middle; }
+.playerB_contorl_start { fill:white; }
+.playerB_contorl_started { fill:#f15b2c; }
+.playerB_contorl_prev,.playerB_contorl_next,.playerB_contorl_play,.playerB_contorl_pause { fill:white; padding: 10px; background: rgba(00,00,00,0.4);}
+.playerB_contorl_share { fill:white;}
+
+.player_bigCover { display: none; position: absolute;top: -20px; left: -20px; right: -20px; bottom: -20px; background: url('http://127.0.0.1:8888/player/img/bg001.jpg') center center; background-size: cover; -webkit-filter: blur(3px);
+} 

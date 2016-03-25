@@ -1,0 +1,156 @@
+.clearfix{
+	overflow:hidden;
+	_zoom:1;
+	}
+a{
+	text-decoration:none;
+	}
+.left{
+	float:left;
+	}
+.right{
+	float:right;
+	}
+body{ 
+	padding:0; 
+	margin:0;
+	font-family:"Microsoft YaHei",Arial, Helvetica, sans-serif;
+	background:url(../../img/player/background.png) top center no-repeat;
+	background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
+}
+.wrapper{
+	display:block;
+	margin:0;
+	padding:0;
+	text-align:center;
+	position:relative;
+	height:568px;
+	}
+.iconfont{
+	color:#fff;
+	font-size:63px;
+	}
+.block-message{
+	height:100px;
+	padding:10px 15px;
+	}
+.msg-box{
+	background-color:#fff;
+	opacity:0.8;
+	padding:10px 10px;
+	border-radius:3px;
+	}
+.msg-box .box-main{
+	text-align:left;
+	position:relative;
+	line-height:24px;
+	}
+.msg-box span{
+	color:#414299;
+	font-size:12px;
+	}
+.msg-box .iconfont{
+	color:#414299;
+	font-size:22px;
+	position:absolute;
+	right:0px;
+	top:-1px;
+	}
+.block-checkin{
+	margin-top:77px;
+	}
+.checkin-circle{
+	height:100px;
+	width:100px;
+	line-height:100px;
+	text-align:center;
+	color:#414299;
+	font-size:16px;
+	visibility:hidden;
+	margin:0 auto;
+	background:url(../../img/player/checkin.png) center center no-repeat;
+	}
+.block-words{
+	margin-top:30px;
+	padding:0px 30px;
+	}
+.block-section{
+	text-align:left;
+	}
+.block-section span{
+	font-size:12px;
+	color:#fff;
+	}
+.section-author {
+	text-align:right;
+	padding-top:10px;
+	}
+.section-author span{
+	opacity:0.6;
+	}
+.block-tools{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:100px;
+	background:url(../../img/player/bar.png) center center no-repeat;
+	background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
+	}
+.player_progress_handle{
+	background-color:#fff;
+	height:8px;
+	width:8px;
+	border-radius:8px;
+	box-shadow:0px 0px 3px #555;
+	position:absolute;
+	top:-2px;
+	}
+.section-prograss{
+	background-color:#9fa0c4;
+	height:2px;
+	}
+.play-percent{
+	background-color:#00a5ed;
+	width:0%;
+	height:2px;
+	}
+.section-times{
+	padding:10px 10px 0px 10px;
+	}
+.section-times span{
+	font-size:12px;
+	color:#fff;
+	}
+.section-buttom{
+	position:relative;
+	padding:10px;
+	}
+.section-buttom .bottom-player{
+	position:absolute;
+	left:10px;
+	top:0px;
+	}
+.section-buttom .album-infor {
+	padding-left:70px;
+	}
+.album-infor .album-name{
+	font-size:13px;
+	line-height:16px;
+	height:16px;
+	color:#fff;
+	margin-bottom:10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	}
+.album-infor .album-artist{
+	font-size:13px;
+	line-height:16px;
+	height:16px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color:#fff;
+	opacity:0.4;
+	}

@@ -1,0 +1,193 @@
+﻿<html>
+
+<head>
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <style type="text/css">
+    body,
+    html {
+        width: 100%;
+        overflow: hidden;
+    }
+    </style>
+
+
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="player.js"></script>
+    <link rel="stylesheet" type="text/css" href="player.css">
+</head>
+
+<body>
+
+    <div class="player_musicMini">
+        <div class="player_progress_box">
+            <div class="player_progress">
+
+            </div>
+        </div>
+        <a href="#" class="player_musicSwitch">
+            <img class="player_musicSmallIcon" src="http://img.1ting.com/images/special/17/s300_c871139c37b8adc8e581d74cbc7a3ae6.jpg">
+        </a>
+        <div class="player_musicInfo">
+            <div class="palyer_musicName">{歌曲名称}</div>
+            <div class="palyer_musicAuthor">{作者}</div>
+        </div>
+        <svg viewBox="-30 -30 140 140" class="player_vote">
+            <g>
+                <path d="M69.971,14.706c-6.498-6.772-17.05-6.772-23.548,0L42,19.291l-4.423-4.6c-6.514-6.772-17.05-6.772-23.548,0
+        c-7.318,7.608-7.318,19.961,0,27.569L42,71.388l27.971-29.113C77.289,34.667,77.289,22.314,69.971,14.706z" />
+            </g>
+        </svg>
+
+        <svg viewBox="-30 -20 140 140" class="player_minContro player_minContro_stop" style="top:-100%">
+            <g>
+                <path d="M24.368,19.105h-0.107c-2.919,0-5.284,2.366-5.284,5.284v49.72c0,2.919,2.366,5.284,5.284,5.284h0.107
+        c2.918,0,5.284-2.366,5.284-5.284V24.39C29.653,21.471,27.287,19.105,24.368,19.105z" />
+                <path d="M59.738,19.105h-0.107c-2.918,0-5.284,2.366-5.284,5.284v49.72c0,2.919,2.366,5.284,5.284,5.284h0.107
+        c2.919,0,5.284-2.366,5.284-5.284V24.39C65.023,21.471,62.657,19.105,59.738,19.105z" />
+            </g>
+        </svg>
+
+        <svg viewBox="-31 -15 120 120" class="player_minContro player_minContro_play">
+            <path d="M21.455,12.287L52.8,40.861c1.406,1.282,1.406,3.495,0,4.777L21.455,74.213c-2.075,1.892-5.41,0.419-5.41-2.389V14.676
+    C16.046,11.868,19.38,10.395,21.455,12.287z" />
+        </svg>
+
+    </div>
+
+    <div class="player_musicBig">
+        <div class="player_bigCover" ></div>
+        <div class="player_progress_box">
+            <div class="player_progress_handle">
+
+            </div>
+            <div class="player_progress">
+
+            </div>
+        </div>
+
+        <div class="playerB_top">
+            <div class="playerB_back">back</div>
+            <div class="palyer_musicName">{歌曲名称}</div>
+            <span class="player_musicType">原创</span>
+            <!-- <div class="playerB_backicons">
+                <span class="playerB_backicons_a"></span>
+                <span class="playerB_backicons_b"></span>
+                <span class="playerB_backicons_c"></span>
+            </div> -->
+        </div>
+
+        <div class="playerB_player">
+            <svg version="1.1" id="PlayerBox" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="90%" viewBox="0 0 527.966 528" enable-background="new 0 0 527.966 528" xml:space="preserve">
+                <g>
+                    <path opacity="0.4" d="M151.394,144.323C180.807,116.638,220.419,99.667,264,99.667c90.759,0,164.333,73.575,164.333,164.333
+        c0,43.581-16.971,83.193-44.657,112.606l70.493,70.493C499.882,399.632,528,335.103,528,264C528,118.197,409.803,0,264,0
+        C192.897,0,128.368,28.118,80.901,73.83L151.394,144.323z" />
+                    <path opacity="0.4" d="M376.606,383.677c-29.413,27.685-69.025,44.657-112.606,44.657c-90.759,0-164.333-73.575-164.333-164.333
+        c0-43.581,16.971-83.193,44.657-112.606L73.83,80.901C28.118,128.368,0,192.897,0,264c0,145.803,118.197,264,264,264
+        c71.103,0,135.632-28.118,183.099-73.83L376.606,383.677z" />
+                </g>
+                <path opacity="0.3" fill="#FFFFFF" d="M264,90.752c-95.682,0-173.248,77.566-173.248,173.248S168.318,437.248,264,437.248
+    S437.248,359.682,437.248,264S359.682,90.752,264,90.752z M264,428.333c-90.759,0-164.333-73.575-164.333-164.333
+    S173.241,99.667,264,99.667S428.333,173.241,428.333,264S354.759,428.333,264,428.333z" />
+                <g opacity="1">
+                    <clipPath id="hexagonal-mask">
+                        <circle cx="50%" cy="50%" r="164" />
+                    </clipPath>
+                    <image clip-path="url(#hexagonal-mask)" class="playerB_cover" height="100%" width="100%" xlink:href="http://www.94meng.com/uploads/allimg/120802/4-120P2204604.jpg" />
+                </g>
+                <g opacity="0.5">
+                    <path d="M264,428.45c-90.678,0-164.45-73.772-164.45-164.45c0-90.678,73.772-164.45,164.45-164.45
+        c90.678,0,164.45,73.772,164.45,164.45C428.45,354.678,354.678,428.45,264,428.45z M264,160.087
+        c-57.298,0-103.913,46.615-103.913,103.913c0,57.298,46.615,103.914,103.913,103.914c57.298,0,103.914-46.615,103.914-103.914
+        C367.913,206.702,321.298,160.087,264,160.087z" />
+                </g>
+            </svg>
+            <div class="playerB_player_time">
+                <span class="playerB_player_timeNowNumber">00:00</span>|
+                <span class="playerB_player_timeGrey">00:00</span>
+            </div>
+        </div>
+
+        <div class="playerB_control">
+            <a href="#">
+                <svg viewBox="0 0 80 80" class="playerB_contorl_start playerB_control_svg">
+                    <g>
+                        <path d="M69.971,14.706c-6.498-6.772-17.05-6.772-23.548,0L42,19.291l-4.423-4.6c-6.514-6.772-17.05-6.772-23.548,0
+        c-7.318,7.608-7.318,19.961,0,27.569L42,71.388l27.971-29.113C77.289,34.667,77.289,22.314,69.971,14.706z" />
+                    </g>
+                </svg>
+            </a>
+            <a href="#">
+                <svg viewBox="20 20 80 80" class="playerB_contorl_prev playerB_control_svg">
+                    <path d="M75.567,29.037L44.222,57.611c-0.021,0.019-0.034,0.042-0.055,0.062V30.734c0-1.406-1.14-2.547-2.547-2.547H41.57
+    c-1.407,0-2.547,1.14-2.547,2.547v58.532c0,1.407,1.14,2.547,2.547,2.547h0.051c1.406,0,2.547-1.14,2.547-2.547V62.327
+    c0.02,0.019,0.034,0.043,0.055,0.062l31.345,28.574c2.075,1.892,5.41,0.419,5.41-2.389V31.426
+    C80.977,28.618,77.643,27.145,75.567,29.037z" />
+                </svg>
+            </a>
+            <a href="#">
+                <svg viewBox="-10 3 75 75" class="playerB_contorl_play playerB_control_svg">
+                    <path d="M21.455,12.287L52.8,40.861c1.406,1.282,1.406,3.495,0,4.777L21.455,74.213c-2.075,1.892-5.41,0.419-5.41-2.389V14.676
+    C16.046,11.868,19.38,10.395,21.455,12.287z" />
+                </svg>
+                <svg viewBox="0 10 80 80" class="playerB_contorl_pause playerB_control_svg" style="display:none">
+                    <g>
+                        <path d="M24.368,19.105h-0.107c-2.919,0-5.284,2.366-5.284,5.284v49.72c0,2.919,2.366,5.284,5.284,5.284h0.107
+        c2.918,0,5.284-2.366,5.284-5.284V24.39C29.653,21.471,27.287,19.105,24.368,19.105z"></path>
+                        <path d="M59.738,19.105h-0.107c-2.918,0-5.284,2.366-5.284,5.284v49.72c0,2.919,2.366,5.284,5.284,5.284h0.107
+        c2.919,0,5.284-2.366,5.284-5.284V24.39C65.023,21.471,62.657,19.105,59.738,19.105z"></path>
+                    </g>
+
+                </svg>
+
+            </a>
+            <a href="#">
+
+
+                <svg viewBox="20 20 80 80" class="playerB_contorl_next playerB_control_svg">
+                    <path stroke="#CDCCCC" stroke-miterlimit="10" d="M44.433,90.963l31.345-28.574c0.021-0.019,0.034-0.042,0.055-0.062v26.939
+    c0,1.406,1.14,2.547,2.547,2.547h0.051c1.407,0,2.547-1.14,2.547-2.547V30.734c0-1.407-1.14-2.547-2.547-2.547h-0.051
+    c-1.406,0-2.547,1.14-2.547,2.547v26.939c-0.02-0.019-0.034-0.043-0.055-0.062L44.433,29.037c-2.075-1.892-5.41-0.419-5.41,2.389
+    v57.148C39.023,91.382,42.357,92.855,44.433,90.963z" />
+                </svg>
+
+            </a>
+            <a href="#">
+                <svg viewBox="0 0 80 80" class="playerB_contorl_share playerB_control_svg">
+                    <path d="M57.822,50.753v10.714c0,0.357-0.29,0.647-0.646,0.647H12.892c-0.357,0-0.647-0.29-0.647-0.647V33.254
+    c0-0.357,0.29-0.647,0.647-0.647h14.025c1.077-1.886,2.353-3.586,3.773-5.095H12.892c-3.166,0-5.742,2.576-5.742,5.742v28.213
+    c0,3.166,2.576,5.742,5.742,5.742h44.283c3.166,0,5.741-2.576,5.741-5.742V46.329L57.822,50.753z" />
+                    <path d="M74.849,29.947L51.964,10.074v11.801c-6.762,0.367-15.412,2.516-20.346,10.526c-5.168,8.389-4.49,21.09-4.49,21.09
+    s1.854-6.134,7.642-11.778c5.095-4.967,14.117-5.928,17.195-5.151V49.82L74.849,29.947z" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="playerB_bottom">
+            <div class="playerB_bottom_box">
+                <span class="playerB_icon_name"></span>
+                <span class="palyer_musicAuthor playerB_bottom_boxText">{作者}</span>
+            </div>
+            <div class="playerB_bottom_box">
+                <span class="playerB_icon_school"></span>
+                <span class="palyer_musicSchool playerB_bottom_boxText">上海电子信息</span>
+            </div>
+            <div class="playerB_bottom_box playerB_bottom_boxLove">
+                <span>
+                    <svg viewBox="-10 -10 90 90" class="playerB_icon_love">
+                        <g>
+                            <path d="M69.971,14.706c-6.498-6.772-17.05-6.772-23.548,0L42,19.291l-4.423-4.6c-6.514-6.772-17.05-6.772-23.548,0
+        c-7.318,7.608-7.318,19.961,0,27.569L42,71.388l27.971-29.113C77.289,34.667,77.289,22.314,69.971,14.706z" />
+                        </g>
+                    </svg>
+                </span>
+
+                <span class="palyer_musicLove playerB_bottom_boxText">123042</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

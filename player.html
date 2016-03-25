@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<title>一首歌一句话</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" />
+<style type="text/css">
+body,html {
+	width: 100%;
+	overflow: hidden;
+}
+</style>
+<link type="text/css" rel="stylesheet" href="css/player/iconfont.css"></link>
+<link type="text/css" rel="stylesheet" href="css/player/player.css"></link>
+<script>
+	var musicInfo = {
+			"artist": "庞麦郎",//作者
+			"title": "我的滑板鞋",//标题
+			"mp3": "http://ichangge-player-music.qiniudn.com/mp3/%E5%BA%9E%E9%BA%A6%E9%83%8E-%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.mp3",
+			//"oga": "http://ichangge-player-music.qiniudn.com/ogg/%E5%BA%9E%E9%BA%A6%E9%83%8E-%E6%88%91%E7%9A%84%E6%BB%91%E6%9D%BF%E9%9E%8B.ogg",
+			"cover": "http://www.zgfznews.com/fznews/yule/yinyue/images/2014711368386.jpg",//封面
+			"love": 1234,//赞数
+			"id": 123,//歌曲id
+			"origin": true,//是否原创
+		};
+</script>
+</head>
+<body>
+	<div class="wrapper">
+        <div class="block-message">
+            <div class="msg-box">
+                <div class="box-main">
+                    <span>答一道题可以获得更多奖励噢~</span>
+                    <a href="javascript:void(0);" class="iconfont msg-close">&#xe614;</a>
+                </div>
+            </div>
+        </div>
+        <div class="block-checkin">
+            <div class="checkin-circle" > 已签到 </div>
+        </div>
+        <div class="block-words">
+            <div class="block-section section-sentence">
+            	<span>我们人生中最艰巨的任务就是自我分析、试图领悟我们的人性并化解其中的一切纷争。</span>
+            </div>
+            <div class="block-section section-author">
+            	<span>From  罗伯特.麦基</span>
+            </div>
+        </div>
+        <div class="block-tools">
+        	<div class="clearfix">
+                <div class="section-prograss">
+                	<div class="player_progress_handle"></div>
+                    <div class="play-percent"></div>
+                </div>
+                <div class="section-times">
+                	<div class="clearfix"><span class="times-up left">01:30</span><span class="times-down right">-03:32</span></div>
+                </div>
+                <div class="section-buttom">
+                    <div class="bottom-player ">
+                        <a href="javascript:void(0);" id="player_start" class="iconfont">&#xe631;</a>
+                        <a href="javascript:void(0);" id="player_stop" class="iconfont" style="display:none;">&#xe630;</a>
+                    </div>
+                    <div class="album-infor ">
+                        <div class="album-name">Classic</div>
+                        <div class="album-artist">The knocks;Fetty Wap; POWERs . THE MORE INFORMATION ...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/player/jquery-1.11.1.min.js"></script>
+<script src="js/player/jquery.jplayer.min.js"></script>
+<script src="js/player/player.js"></script>
+</body>
+</html>
